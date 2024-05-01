@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mi Proyecto</title>
+    <link rel="stylesheet" href="/public/styles.css">
+
+    <header class="header">
+        <div class="logo">
+            <img src="./imagenes/Logo Sena.png" alt="Logo Sena">
+        </div> 
+        <nav>
+            <article class="article">
+        <section id="pagina-uno">
+            <ul class="nav_links">
+                <header class="header">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/experto">Reglas de Usabilidad</a></li>
+                <li><a href="#">Interfaz grafica</a></li>
+            </header>
+            </ul>
+        </nav>
+        <a href="#" class="btn">><button>Contactanos</button></a>
+    </header>
+     <body>
+        <header class="header1">
+            <nav>
+                <a href="#pagina-uno"></a>
+                <a href="#pagina-dos"></a>
+            </nav>
+        </header>
+
+        <article class="article">
+            <section id="pagina-uno">
+                    <main class="main">
+                         <section  class="main_section_uno">
+                            <div class="main_section_one--info">
+                                <h1>Reglas de Uabilidad</h1>
+                                    <p>Las reglas de usabilidad se refieren a principios y pautas 
+                                        diseñados para mejorar la facilidad de uso, la eficiencia
+                                         y la satisfacción del usuario al interactuar con un producto 
+                                         o sistema, como por ejemplo un sitio web, una aplicación móvil
+                                          o un software.</p>
+                                          <p>Estas reglas están orientadas a facilitar la experiencia 
+                                           del usuario, haciéndola más intuitiva, accesible y eficaz.
+                                           Buscan minimizar la dificultad que pueda tener un usuario 
+                                           al navegar o interactuar con un producto, maximizando su 
+                                           comprensión y utilidad.</p>
+                                           <p>Las reglas de usabilidad pueden abarcar aspectos diversos
+                                           como la navegación clara, la disposición lógica del contenido,
+                                           el diseño visual atractivo, la capacidad de respuesta en diferentes
+                                           dispositivos, la retroalimentación adecuada al usuario, 
+                                           entre otros.</p>
+                                        <form action="/sugerencia" method="post">   
+                                            <input type="mail" name ="mai"class =input_prymery placeholder="Escribe tu correo electronico">
+                                            <input type="texto" name ="sug" class =input_prymery placeholder="Dejanos tus sugerencias del sitio">
+                                            <button class="button_primary">Enviar sugerencia</button>
+                                        </form>  
+                                        
+                             </div>
+                            <div class="main_section_one--img">
+                                <img src="/imagenes/usabilidad2.png" alt="">
+                            </div>
+                
+                         </section>
+                    </main>            
+                </section>
+            </section>
+            <section id="pagina-dos">
+                <div class="container">
+                    <img class ="login_logo" src="/imagenes/administrador.png" alt="">          
+        <form action="/validar" method="post" class="login-form">
+                 <h3>Sign In</h3> 
+        <input type="text" name = 'emai'placeholder="Email or phone number" id="email-phone" required="true">
+        <input type="password"  name = 'pass' placeholder="Password" id="password" required="true"> 
+        <button type="submit">Sign In</button>
+        <div class="extra-links">
+            <a href="/register">Registrese</a>
+            <a href="#">Need help?</a>
+        </div>
+    </form>
+       <div class="signup-link">
+        <p>New to page? <a href="#">Sign up now.</a></p>
+    </div>
+  </div>
+</section>         
+        </article>
+        
+        <footer class="footer ">
+            <div class="logo">
+                <img src="./imagenes/usabilidad.png" alt="Logo Sena">
+            </div> 
+            
+        <div class="nav_links">
+            <nav>
+                <li> <a href="/index.html">INICIO</a> </li>    
+                <li> <a href="#">INFORMACION</a> </li> 
+                <li> <a href="#">CONTACTO</a>   </li>   
+            </nav>    
+        </div>
+        </footer>
+ </body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/bootstrap.css">
+</head>
+
+ 
+
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Interfaz Grafica</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <h1 class=" interfaz">INTEFAZ GRAFICA</h1>
+  <div class="container-fluid">
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./imagenes/Imagen3.png" class="d-block w-100" alt="..." width="5"    height="400">
+
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./imagenes/interfaz_grafica.png" class="d-block w-100" alt="..."  width="5"    height="400">
+            <div class="carousel-caption d-none d-md-block">
+                <h5> La interfaz grafica del usuario admnistrador</h5>
+                <p>En este espacio el usuario podra administrar a los usuario de la base datos</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/Imagen1.png" class="d-block w-100" alt="..." width="5"    height="400">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </div>
+
+
+    </header>
+    <body>
+    <center>
+        <div class="container">
+            <button class="btn btn-danger dropdown-toggle" onclick="mostrarTabla('tabla1')">Eliminar Usuarios</button>
+            <button class="btn btn-danger dropdown-toggle" onclick="mostrarTabla('tabla2')">Consultar Usuarios</button>
+          </div>
+          
+          <table id="tabla1" style="display: none;">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Contrasena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+              </tr>
+              <tr>
+                <td>Dato 4</td>
+                <td>Dato 5</td>
+                <td>Dato 6</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <table id="tabla2" style="display: none;">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>correo</th>
+                <th>Contrasena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+              </tr>
+              <tr>
+                <td>Dato 4</td>
+                <td>Dato 5</td>
+                <td>Dato 6</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <script>
+            function mostrarTabla(idTabla) {
+              var tabla = document.getElementById(idTabla);
+              if (tabla.style.display === "none") {
+                tabla.style.display = "table";
+              } else {
+                tabla.style.display = "none";
+              }
+            }
+          </script>
+
+    
+</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

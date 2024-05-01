@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: revert;
+    padding:10px;
+    font-family:'Glass Antiqua', cursive;
+    font-size: 20px;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('/public/imagenes/Firefly interfaces graficas pagina web 18876.jpg');
+    background-size: cover; /* Esto asegura que la imagen de fondo cubra todo el cuerpo */
+    background-position: center; /* Esto centra la imagen de fondo */
+    /* Otras propiedades opcionales */
+    background-repeat: no-repeat; /* Esto evita que la imagen se repita */
+}
+.header {
+    background-color: #4aab98 ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:85px;
+    padding: 5px 10%;
+}
+
+.header.logo{
+    cursor: pointer;
+}
+.header .logo img{
+    height: 100px;
+    width: auto;
+    transition: all 0.3s;
+}
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav_links{
+    list-style: none;
+}
+.header .nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav_links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav_links a{
+    font-size: 700;
+    color: #f6f8f0;
+    text-decoration: none;
+} 
+.header .nav_links li a:hover {
+    color: #b4f209;
+}
+
+.header .btn button {
+    font-weight: 700;
+    color: #1b3039;
+    padding:9px 25px;
+    background: #f6f8f0;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all o.3s ease 0s;
+}
+
+.header .btn button:hover {
+    background-color: #e2f1f8;
+    }
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+.login-form {
+    margin-top: 30px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    width: 100%;
+    background-color: #c13434;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    opacity: 0.8;
+}
+
+.login_logo {
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+.extra-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-link {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.signup-link a {
+    color: #5786e6;
+    text-decoration: none;
+}
+
+
+.item  {
+    position: relative;
+    text-align: center;
+    width: calc(100% - 260px);
+    transition: all .5s ease;
+    min-height: 20vh;
+}
+.article section {
+    display: CO;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header1 nav {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.header1 nav a {
+    border: 3px solid #000;
+    border-radius: 50%;
+    display: block;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+}
+  
+.header1 nav a:nth-child(1), .article #pagina-uno{
+    background-color: #e3e2d9;
+}
+.header1 nav a:nth-child(2), .article #pagina-dos {
+    background-color:#d0d8cb;      
+}
+.colaboradores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.colaborador {
+    flex: 0 0 45%;
+    max-width: 45%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.colaborador img {
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+}
+.button_primary {
+    font-weight: 700;
+    color: #181919;
+    padding:9px 25px;
+    background: #384fd4;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all o.3s ease 0s;
+}
+.input_prymery {
+    padding: 10px;
+    border:none;
+}
+
+.button_primary:hover {
+    background: var(--blue-60);
+}
+
+p {
+    line-height: 1.5;
+}
+
+.main {
+    margin-top: 150px;
+    width: 100%;
+}
+
+.main_section_uno {
+    width: 60%;
+    max-width: 1360px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.main_section_one--info {
+    width: 200%;
+    padding-right: 5em;
+}
+.main_section_one--info h1 {
+    font-size: 20px;
+    margin-bottom: 0.5em;
+}
+.main_section_one--info form input {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 1em;
+    
+}
+
+.main_section_one--img {
+    width: 85%;
+    
+}  
+
+.main_section_one--img  img {
+    width: 190%;
+    border-radius: 10%;
+}
+
+.main_section_one-img img {
+    width: 1000%;
+    border-radius: 10%;
+}
+
+.menu-navegacion {
+    width: 50px; 
+    height: auto;
+    border: 1px solid #ccc; 
+ 
+  }
+  
+  
+  .captura-desktop,
+  .captura-tablet,
+  .captura-mobile {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px; 
+  }
+  
+  
+  .carga-rapida,
+  .carga-lenta {
+    width: 400px; 
+    height: auto; 
+   
+  }
+  
+ 
+  .texto-legible {
+    width: 500px; 
+    height: auto; 
+   
+  }
+  
+  
+  .confirmacion {
+    width: 250px; 
+    height: auto; 
+   
+  }
+
+
+  .pie-pagina {
+    width: 100%;
+    background-color: #e1ae48;
+
+  }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 20px 15px;
+  }
+
+  .pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+  }
+  .pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 10%;
+    font-size:  200%;
+  }
+
+  .pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+  } 
+
+  .pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #e0711d;
+    text-align: center;
+
+
+  }
+
